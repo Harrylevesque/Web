@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Creator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Page Creator</h1>
+    <div id="page-name-container">
+        <label for="page-name">Page Name:</label>
+        <input type="text" id="page-name" placeholder="Enter page name">
+    </div>
+    <div id="tld-container">
+        <label for="tld">Top-Level Domain:</label>
+        <select id="tld">
+            <option value=".com">.com</option>
+            <option value=".org">.org</option>
+            <option value=".net">.net</option>
+            <option value=".edu">.edu</option>
+            <option value=".gov">.gov</option>
+            <option value=".mil">.mil</option>
+            <option value=".int">.int</option>
+            <option value=".eu">.eu</option>
+            <option value=".co">.co</option>
+            <option value=".io">.io</option>
+            <option value=".biz">.biz</option>
+            <option value=".info">.info</option>
+            <option value=".name">.name</option>
+            <option value=".pro">.pro</option>
+            <option value=".aero">.aero</option>
+            <option value=".museum">.museum</option>
+            <option value=".coop">.coop</option>
+            <option value=".tv">.tv</option>
+            <option value=".us">.us</option>
+            <option value=".ca">.ca</option>
+            <option value=".au">.au</option>
+            <option value=".nz">.nz</option>
+            <option value=".jp">.jp</option>
+            <option value=".cn">.cn</option>
+            <option value=".ru">.ru</option>
+            <option value=".br">.br</option>
+            <option value=".in">.in</option>
+        </select>
+    </div>
+    <div id="editor-container">
+        <textarea id="editor"></textarea>
+    </div>
+    <button onclick="savePage()">Save Page</button>
+    <div id="search-container">
+        <input type="text" id="search" placeholder="Search pages..." oninput="searchPages()">
+        <ul id="search-results"></ul>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/6.3.1/tinymce.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
